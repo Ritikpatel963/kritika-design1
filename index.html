@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+</head>
+<body class="bg-black text-white">
+
+  <div class="main w-full relative">
+    <!-- Navigation -->
+    <nav class="w-full  px-10 py-1 flex justify-between items-center z-50">
+      <img class="w-[160px] mix-blend-screen filter saturate-150 contrast-150"  
+      src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" alt="">
+      <div class="flex gap-5 items-center">
+        <a href="#home" class="tracking-tight text-white font-semibold transition hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">Home</a>
+        <a href="#games" class="tracking-tight text-white font-semibold transition hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">Games</a>
+        <a href="#news" class="tracking-tight text-white font-semibold transition hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">News</a>  
+        <a href="#community" class="tracking-tight text-white font-semibold transition hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">Community</a>
+        <a href="#contact" class="tracking-tight text-white font-semibold transition hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Canvas -->
+    <section class="relative w-full h-screen overflow-hidden z-0">
+      <canvas id="canvas" class="absolute top-0 left-0 w-full h-full z-0"></canvas>
+      <img class="absolute w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-lighten z-10"  
+        src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" 
+        alt="">
+    </section>
+
+  
+    <!-- Gradient strip only (no full section) -->
+<div class="w-full h-52 relative bg-[#000]">
+  
+</div>
+<!-- Welcome to the Dark Future Section -->
+<section id="dark-future" class="min-h-screen w-full px-10 py-20 bg-[#fff200] text-black text-center" data-scroll-section>
+  <h2 class="text-5xl font-extrabold tracking-tight mb-6 scroll-reveal">WELCOME TO THE DARK FUTURE</h2>
+  <p class="max-w-3xl mx-auto text-lg font-medium scroll-reveal">
+    Immerse yourself in the Cyberpunk universe, from the original storyline of Cyberpunk 2077 and its gripping spy-thriller expansion Phantom Liberty to the award-winning anime series Cyberpunk: Edgerunners — there are countless stories to discover in the deadly megalopolis of Night City.
+  </p>
+
+  <!-- Corner Frames -->
+  <div class="w-full flex justify-between mt-10 px-4 scroll-reveal">
+    <span class="text-3xl">⌜</span>
+    <span class="text-3xl">⌝</span>
+  </div>
+
+  <body class="bg-yellow-400 min-h-screen flex items-center justify-center p-10">
+  
+    
+  <div class="w-full flex flex-wrap justify-center gap-8 mt-12">
+    <!-- Card 1 -->
+    <div class="flip-card group w-72 h-96 perspective">
+      <div class="flip-card-inner transition-transform duration-700 group-hover:rotate-y-180 group-focus:rotate-y-180">
+      <!-- Front -->
+      <div class="flip-card-front absolute w-full h-full bg-black rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-orange-400">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ZRJOoNb-fa1RkomGHC9H_P6CzP3cr4hGlw&s" alt="Night City" 
+        class="w-full h-full object-contain object-center bg-slate-900 rounded-xl">
+        <h3 class="text-2xl font-bold tracking-wide text-white">Night City</h3>
+      </div>
+      <!-- Back -->
+      <div class="flip-card-back absolute w-full h-full bg-[#18181b] rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-orange-400 rotate-y-180">
+        <p class="text-lg px-6 mb-6 text-orange-200">Explore the neon-lit streets and secrets of Night City, where danger lurks at every corner.</p>
+        <button class="neon-btn px-6 py-2 rounded-full font-semibold text-black bg-orange-400 relative overflow-hidden">
+        <span class="relative z-10">Learn More</span>
+        </button>
+      </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="flip-card group w-72 h-96 perspective">
+      <div class="flip-card-inner transition-transform duration-700 group-hover:rotate-y-180 group-focus:rotate-y-180">
+        <!-- Front -->
+        <div class="flip-card-front absolute w-full h-full bg-black rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-blue-400">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gdgTHf0a2Yq6rtCDuNMoYA-ddGp5DRT5cg&s" alt="Edgerunners"
+           class="w-full h-full object-contain object-center bg-slate-900 rounded-xl">
+          <h3 class="text-2xl font-bold tracking-wide  text-white">Edgerunners</h3>
+        </div>
+        <!-- Back -->
+        <div class="flip-card-back absolute w-full h-full bg-[#18181b] rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-blue-400 rotate-y-180">
+          <p class="text-lg px-6 mb-6 text-blue-200">Dive into the world of Edgerunners, where only the bold survive and legends are born.</p>
+          <button class="neon-btn px-6 py-2 rounded-full font-semibold text-black bg-blue-400 relative overflow-hidden">
+            <span class="relative z-10">Learn More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="flip-card group w-72 h-96 perspective">
+      <div class="flip-card-inner transition-transform duration-700 group-hover:rotate-y-180 group-focus:rotate-y-180">
+        <!-- Front -->
+        <div class="flip-card-front absolute w-full h-full bg-black rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-pink-400">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG-KQZT55nWIA4zHU9Zn6tcMWwItM5ccjdng&s" alt="Phantom Liberty" 
+          class="w-full h-full object-contain object-center bg-slate-900 rounded-xl">
+          <h3 class="text-2xl font-bold tracking-wide text-white">Phantom Liberty</h3>
+        </div>
+        <!-- Back -->
+        <div class="flip-card-back absolute w-full h-full bg-[#18181b] rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-pink-400 rotate-y-180">
+          <p class="text-lg px-6 mb-6 text-pink-200">Unravel the mysteries of Phantom Liberty in a gripping spy-thriller expansion.</p>
+          <button class="neon-btn px-6 py-2 rounded-full font-semibold text-black bg-pink-400 relative overflow-hidden">
+            <span class="relative z-10">Learn More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="flip-card group w-72 h-96 perspective">
+      <div class="flip-card-inner transition-transform duration-700 group-hover:rotate-y-180 group-focus:rotate-y-180">
+        <!-- Front -->
+        <div class="flip-card-front absolute w-full h-full bg-black rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-green-400">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4JEIlkg31o3kvljbxLqKDkCUmPbLNZNBtqw&s" alt="Cyber Gear" 
+          class="w-full h-full object-contain object-center bg-slate-900 rounded-xl">
+          <h3 class="text-2xl font-bold tracking-wide  text-white">Cyber Gear</h3>
+        </div>
+        <!-- Back -->
+        <div class="flip-card-back absolute w-full h-full bg-[#18181b] rounded-xl shadow-lg flex flex-col items-center justify-center border-2 border-green-400 rotate-y-180">
+          <p class="text-lg px-6 mb-6 text-green-200">Upgrade your arsenal with the latest cyber gear and enhancements.</p>
+          <button class="neon-btn px-6 py-2 rounded-full font-semibold text-black bg-green-400 relative overflow-hidden">
+            <span class="relative z-10">Learn More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+  
+  </style>
+
+  <script>
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+      card.querySelector('.flip-card-inner').classList.toggle('rotate-y-180');
+    });
+    card.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        card.classList.toggle('flipped');
+        card.querySelector('.flip-card-inner').classList.toggle('rotate-y-180');
+      }
+    });
+  });
+  </script>
+   
+
+
+
+  <script type="module" src="src/main.js"></script>
+
+
+ 
+
+
+</body>
+</html>
