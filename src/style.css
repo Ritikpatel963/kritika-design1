@@ -51,7 +51,7 @@ body{
   .flip-card-front, .flip-card-back {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.1s;
   }
   .flip-card-front {
     z-index: 2;
@@ -61,7 +61,7 @@ body{
     z-index: 1;
   }
   .neon-btn {
-    box-shadow: 0 0 16px 4px rgba(255,255,0,0.7), 0 0 32px 8px rgba(255,255,0,0.3);
+    box-shadow: 0 0 16px 4px rgba(255, 149, 0, 0.7), 0 0 32px 8px rgba(255,255,0,0.3);
     animation: neon-glow 1.5s infinite alternate;
     transition: box-shadow 0.3s;
   }
@@ -78,8 +78,8 @@ body{
     animation: neon-glow-green 1.5s infinite alternate;
   }
   @keyframes neon-glow {
-    0% { box-shadow: 0 0 16px 4px #ffe600, 0 0 32px 8px #ffe60044; }
-    100% { box-shadow: 0 0 32px 12px #ffe600, 0 0 64px 16px #ffe60066; }
+    0% { box-shadow: 0 0 16px 4px #ff8800, 0 0 32px 8px #ffe60044; }
+    100% { box-shadow: 0 0 32px 12px #ff8800, 0 0 64px 16px #ffe60066; }
   }
   @keyframes neon-glow-blue {
     0% { box-shadow: 0 0 16px 4px #3b82f6, 0 0 32px 8px #3b82f644; }
